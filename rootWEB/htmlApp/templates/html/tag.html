@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,5 +12,43 @@
       기본태그에 대해서 알아볼까요?
   </pre>
 
+  <section>
+      <article>
+          <a href ="http://www.naver.com" target="_self">naver</a></br>
+          <a href ="http://www.naver.com" target="_blank">naver</a></p>
+          <a href ="http://www.naver.com" target="_parent">naver</a></br>
+          <a href ="http://www.naver.com" target="_top">naver</a></p>
+      </article>
+
+  </section>
+  <section>
+      <article>
+          <dl>
+              <dt>Java</dt>
+              <dd> - jsp</dd>
+              <dt>Python</dt>
+              <dd> - pandas</dd>
+              <dt>Django</dt>
+              <dd> - web</dd>
+          </dl>
+      </article>
+  </section>
+  <section>
+      <article>
+          <table border = "1">
+              <tr>
+                  <th>고객번호</th><th>고객이름</th><th>포인트</th><th>전화번호</th>
+              </tr>
+               <tr>
+                  <td>100</td><td>차이</td><td>10000</td><th>xxxx</th>
+              </tr>
+          </table>
+      </article>
+  </section>
+ <section>
+      <article>
+         <img src="{% static '/img/강아지아이콘.jpg'%}" />
+      </article>
+  </section>
 </body>
 </html>
