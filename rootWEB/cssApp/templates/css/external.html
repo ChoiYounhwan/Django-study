@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>외부스타일시트 적용</title>
+  <!-- 외부스타일시트 적용 방법-->
+  <link type="text/css" rel="stylesheet" href="{% static 'css/test_external.css'%}">
+
+    <!-- 내부스타일시트 적용 방법-->
+    <style>
+        span {
+           color : pink;
+           }
+    </style>
+</head>
+<body>
+ <div>
+  <p>여기는 단락을 의미하는 태그 영역입니다.</p>
+ </div>
+
+ <!-- 인라인스타일시트 적용 -->
+ <div style="color : green;">
+     공간을 구분하는 태그입니다.
+ </div>
+ <div style="color : green;">
+     공간을 구분하는 태그입니다.
+ </div>
+
+ <div>
+     <span>공간을 구분하는 태그입니다.</span>
+ </div>
+
+</body>
+</html>

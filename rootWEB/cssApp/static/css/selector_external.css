@@ -1,0 +1,28 @@
+
+.header {
+   color : blue ;
+   background-color : yellow ;
+}
+
+.header01 {
+   color : red ;
+   background-color : green ;
+}
+h3.header {
+    color : navy ;
+    background-color : pink ;
+}
+
+#ai{
+  color : blue ;
+  background-color : green ;
+}
+
+h5#ai{
+  color : red ;
+  background-color : yellow ;
+}
+
+input[type='text']{
+   background-color : pink ;
+}

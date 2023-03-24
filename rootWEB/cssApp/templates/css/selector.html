@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>선택자</title>
+    <!-- 외부스타일시트 적용 방법-->
+    <link type="text/css" rel="stylesheet" href="{% static 'css/selector_external.css'%}">
+</head>
+<body>
+    <pre>
+        태그에 정의되는 class 속성은 css의 클래스 선택자를 사용하기위해서 사용됨.
+        태그에 정의되는 id    속성은 css의 아이디 선택자를 사용하기위해서 사용됨.
+    </pre>
+
+    <h1 class="header">문서의 헤더를 정의하는 태그입니다.</h1>
+    <h2 class="header01">문서의 헤더를 정의하는 태그입니다.</h2>
+    <h3 class="header">문서의 헤더를 정의하는 태그입니다.(tag+class)</h3>
+    <h4 id="ai">문서의 헤더를 정의하는 태그입니다.</h4>
+    <h5 id="ai">문서의 헤더를 정의하는 태그입니다.(tag+id)</h5>
+    <p/>
+    <input type ="text" name="id">
+    <input type="password" name="passwd">
+
+</body>
+</html>

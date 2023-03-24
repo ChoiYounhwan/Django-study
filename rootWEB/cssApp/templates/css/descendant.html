@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    div ul{
+       color : red;
+    }
+    div > * {
+      color : yellow;
+      background-color : purple;
+    }
+    h6 , span , h5{
+      color : red ;
+      background-color : yellow
+    }
+  </style>
+</head>
+<body>
+  <pre>
+    후손, 자손, 그룹 선택자
+  </pre>
+  <div>
+    <h1>Descendant01</h1>
+    <h2>Descendant02</h2>
+    <h3>Descendant03</h3>
+    <ul>직계 ul
+      <li>자손이 아닌 후손01</li>
+      <li>자손이 아닌 후손02</li>
+    </ul>
+  </div>
+  <hr/>
+  <ul>
+    <li>body영역의 ul-li</li>
+  </ul>
+
+  <hr/>
+  <h6>그룹 헤더</h6>
+  <span>스타일 지정을 그룹으로 적용</span>
+</body>
+</html>

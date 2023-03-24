@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>박스모델</title>
+
+    <style>
+      div{
+        width   : 300px;
+        border  : 1px solid navy ;
+        padding : 15px ;
+        }
+      p {
+        background-color : yellow ;
+        color : red;
+        font-weight : bold;
+        font-size : 16pt;
+        }
+      p.box01 {
+        width : 700px;
+        height : 80px;
+        color : green;
+      }
+      p.box02 {
+        width : 50%;
+        height : 150%;
+        color : purple;
+      }
+       p.box03 {
+        width : 10cm;
+        height : 3cm;
+        color : blue;
+        border-style : inset;
+      }
+
+      .boxshadow {
+         background-color : yellow;
+         border : 5px solid blue;
+
+         box-shadow : 10px 100px 100px black maroon;
+      }
+
+      img {
+        width : 400px;
+        border : 400px;
+        padding : 30px;
+        margin : 20px;
+
+      .img_shadow {
+        box-shadow : 5px 5px 1px red;
+    </style>
+</head>
+<body>
+   <pre>
+     웹 문서의 레이아웃을 정의
+     각종 요소들(tag)을 원하는 위치에 배치
+     속성 :
+     - content : 박스에 내용 넣은거
+     - padding : 박스와 내용 사이 채우기
+     - border  : Top,B,L,R border가 있다. 테두리
+     - margin  : 박스와 박스 사이 공간
+
+    테두리 스타일
+     - none, dotted, dashed, solid, double, groove, ridge, inset, outset
+
+    박스 그림자
+     - box-shadow : 수평 | 수직 | 그림자흐름 | 번짐 | 색상 | 삽입효과
+
+   </pre>
+
+  <div>
+    박스모델의 content 입니다.
+  </div>
+
+  <p>박스 모델의 내용 영역 크기 지정</p>
+  <p class="box01">박스 모델의 내용 영역 크기 지정(px)</p>
+  <p class="box02">박스 모델의 내용 영역 크기 지정(%)</p>
+  <p class="box03">박스 모델의 내용 영역 크기 지정(cm)</p>
+
+  <h1>박스 그림자</h1>
+  <h5 class="boxshadow">박스 그림자 스타일링 예제</h5>
+
+   <img src="{% static 'img/강아지아이콘.jpg' %}">
+   <img src="{% static 'img/mvt.png' %}" class="img_shadow">
+</body>
+</html>
